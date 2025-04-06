@@ -5,24 +5,54 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#121212"
     },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Uni-Way to use your location for finding rides."
+        }
+      ]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Uni-Way needs access to your location to show nearby rides.",
+        "NSLocationAlwaysUsageDescription": "Uni-Way needs access to your location to show nearby rides."
+      },
+      "bundleIdentifier": "com.zenfree.uniway",
+      "config": {
+        "googleMapsApiKey": "AIzaSyD16iZPW3YVJ5gKCO8XmcjWa8AfuhinDnQ"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#121212"
+      },
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"],
+      "package": "com.zenfree.uniway",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyD16iZPW3YVJ5gKCO8XmcjWa8AfuhinDnQ"
+        }
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "extra": {
+      "eas": {
+        "projectId": "f32bdd67-5ad3-4e14-864d-9a9d25dcde27"
+      }
+    },
+    "owner": "zenfree"
   }
 }

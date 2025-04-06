@@ -1,0 +1,24 @@
+{
+    "drivers": [
+      {
+        "name": "Ahmad",
+        "email": "driver@uniway.com",
+        "password": "driver123",
+        "userType": "driver",
+        "rating": 4.8,
+        "car": "Proton Saga",
+        "plateNumber": "WTU 4231",
+        "phone": "+6012345678"
+      },
+      {
+        "name": "Sarah",
+        "email": "sarah@uniway.com",
+        "password": "sarah123",
+        "userType": "driver",
+        "rating": 4.9,
+        "car": "Honda City",
+        "plateNumber": "VTS 5678",
+        "phone": "+6019876543"
+      }
+    ]
+  }
