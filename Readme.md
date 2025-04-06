@@ -32,6 +32,7 @@ This project is already configured in Expo. To access it:
 ```bash
 # Install Expo CLI globally if you haven't already
 npm install -g expo-cli
+npx install -g expo-cli
 
 # Login to Expo using the credentials provided
 npx expo login
